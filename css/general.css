@@ -86,6 +86,10 @@ body {
   color: #555;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /*******************************/
 /* GENERA REUSEABLE COMPONENTS */
 /*******************************/
@@ -160,7 +164,7 @@ body {
   border-radius: 9px;
 
   /* Animation effect to slowly change the bg-color of the button from primary state to hove state instead of changing instantly. ALways should be added to primary "state" */
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -190,6 +194,33 @@ body {
   /* This is because if we add border outside the layot while hovering jumps */
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  /* currentColor uses the color set on the font */
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER CLASSES */
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
