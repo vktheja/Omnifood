@@ -146,6 +146,8 @@ In media queries usage of em is preferable over rem when defining break-points f
 
   .main-nav {
     background-color: rgba(255, 255, 255, 0.914);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
